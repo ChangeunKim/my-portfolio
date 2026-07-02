@@ -1,0 +1,326 @@
+<!DOCTYPE html><html lang="ko"><head><meta charset="utf-8" /><meta
+            name="viewport"
+            content="width=device-width,initial-scale=1,shrink-to-fit=no" /><meta
+            name="description"
+            content="김창은 프로젝트 포트폴리오 - 금융공학, AI/ML, LLM Agent, 데이터 엔지니어링" /><meta
+            name="author" content="김창은" /><title>김창은 프로젝트 포트폴리오</title><link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap"
+            rel="stylesheet" /><link href="css/styles.css"
+            rel="stylesheet" /><style>
+:root{--ink:#17202a;--muted:#5f6b76;--line:#dce2e7;--paper:#fff;--soft:#f5f7f8;--teal:#0f625d;--teal-dark:#0b4b47;--coral:#c9553d}
+html{scroll-behavior:smooth}body{font-family:"Noto Sans KR",system-ui,sans-serif;color:var(--ink);background:var(--paper)}
+h1,h2,h3,.nav-link{font-family:"Noto Sans KR",system-ui,sans-serif;text-transform:none;letter-spacing:0}
+h1{max-width:900px;margin:0;font-size:clamp(2.75rem,6.4vw,5.7rem);font-weight:900;line-height:1.03}
+h2{margin:0;font-size:clamp(2rem,4vw,3.35rem);font-weight:900;line-height:1.17}h3{margin:0 0 .7rem;font-size:1.05rem;font-weight:900}p{line-height:1.78}a{color:var(--teal)}
+#sideNav{background:var(--teal)!important}#sideNav .navbar-brand .profile-img{width:9.6rem;height:9.6rem;object-fit:cover;border:.45rem solid rgba(255,255,255,.2)}
+#sideNav .navbar-nav .nav-item .nav-link{padding:.55rem 0;color:rgba(255,255,255,.7);font-size:.86rem;line-height:1.3}#sideNav .navbar-nav .nav-item .nav-link:hover,#sideNav .navbar-nav .nav-item .nav-link.active{color:#fff}
+.nav-year{display:block;margin-bottom:.12rem;color:rgba(255,255,255,.95);font-size:.7rem;font-weight:900}.nav-title{display:block;font-weight:700}
+.overview{min-height:92vh;display:flex;align-items:center;padding:5rem 6vw}.overview-inner{width:min(1120px,100%)}.eyebrow{margin-bottom:1.2rem;color:var(--teal);font-size:.78rem;font-weight:900;text-transform:uppercase}
+.role-line{max-width:800px;margin:1.5rem 0 1.2rem;color:#38434d;font-size:clamp(1.1rem,2vw,1.45rem);font-weight:700;line-height:1.65}.contact-line{display:flex;flex-wrap:wrap;gap:.65rem 1.3rem;color:var(--muted);font-size:.92rem}
+.overview-index{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));margin-top:4rem;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.overview-index a{min-height:118px;padding:1.25rem 1rem;color:var(--ink);text-decoration:none;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}.overview-index a:nth-child(3n){border-right:0}.overview-index a:nth-child(n+4){border-bottom:0}.overview-index small{display:block;margin-bottom:.35rem;color:var(--coral);font-weight:900}.overview-index strong{line-height:1.45}
+#company-db h2{font-size:clamp(1.9rem,3.4vw,3rem);word-break:keep-all}.case-study{padding:0;border-top:1px solid var(--line)}.case-study:nth-of-type(even){background:var(--soft)}.case-wrap{width:min(1240px,calc(100% - 8vw));margin:0 auto;padding:6.5rem 0}
+.case-header{display:grid;grid-template-columns:minmax(0,.9fr) minmax(430px,1.1fr);gap:5vw;align-items:center}.case-kicker{margin-bottom:.8rem;color:var(--teal);font-size:.82rem;font-weight:900}.case-lead{margin:1.35rem 0 1.5rem;color:#34404b;font-size:1.08rem}
+.case-status{display:inline-block;margin-bottom:1.1rem;padding:.32rem .62rem;border-left:3px solid var(--coral);color:#4d5964;background:rgba(255,255,255,.6);font-size:.78rem;font-weight:800}.case-media{min-width:0}.brand-media{display:flex;align-items:center;justify-content:center;background:#fff;min-height:260px}.case-media.brand-media img{width:52%;max-width:240px;aspect-ratio:auto;object-fit:contain}.case-media img{display:block;width:100%;max-height:630px;object-fit:contain;background:#fff;border:1px solid var(--line)}
+.tags{display:flex;flex-wrap:wrap;gap:.5rem}.tags span{padding:.3rem .62rem;color:#34404b;border:1px solid #bfc9cf;border-radius:3px;font-size:.76rem;font-weight:700}
+.metric-band{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));margin:4rem 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.metric{min-height:124px;padding:1.3rem 1.4rem;border-right:1px solid var(--line)}.metric:last-child{border-right:0}.metric strong{display:block;margin-bottom:.45rem;color:var(--teal-dark);font-size:clamp(1.45rem,3vw,2.45rem);font-weight:900;line-height:1.2}.metric span{color:var(--muted);font-size:.84rem;line-height:1.5}
+.case-evidence-grid.single{grid-template-columns:1fr}.case-evidence-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.2rem;margin:0 0 4rem}.case-evidence-grid figure{margin:0;background:#fff;border:1px solid var(--line)}.case-evidence-grid img{display:block;width:100%;aspect-ratio:16/9;object-fit:contain}.case-evidence-grid figcaption{padding:.75rem 1rem;color:var(--muted);font-size:.78rem;line-height:1.55;border-top:1px solid var(--line)}.case-details{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:2.2rem 2.7rem}.detail-block{padding-top:1.1rem;border-top:3px solid var(--ink)}.detail-block p,.detail-block li{color:#4a5661;font-size:.93rem;line-height:1.75}.detail-block ul{margin:0;padding-left:1.1rem}.detail-block li{margin-bottom:.45rem}.detail-wide{grid-column:span 2}.outcome{color:var(--coral)}
+@media(min-width:992px){body{padding-left:17rem}#sideNav{width:17rem}}@media(max-width:991px){.overview{min-height:auto;padding:8rem 6vw 4rem}.case-header{grid-template-columns:1fr}.case-media{margin-bottom:1rem}}
+@media(max-width:720px){.case-evidence-grid{grid-template-columns:1fr}h1{font-size:2.45rem;word-break:keep-all}h2{font-size:1.85rem;word-break:keep-all}.overview-index,.metric-band,.case-details{grid-template-columns:1fr}.overview-index a,.overview-index a:nth-child(3n),.overview-index a:nth-child(n+4){min-height:auto;border-right:0;border-bottom:1px solid var(--line)}.overview-index a:last-child{border-bottom:0}.metric{min-height:auto;border-right:0;border-bottom:1px solid var(--line)}.metric:last-child{border-bottom:0}.detail-wide{grid-column:span 1}.case-wrap{width:min(100% - 2rem,1240px);padding:4rem 0}}
+@media print{body{padding-left:0;font-size:9.5pt}#sideNav{display:none}.overview{min-height:auto;padding:12mm 8mm}.overview-index{display:none}.case-wrap{width:100%;padding:10mm 8mm}.case-header{grid-template-columns:1fr 1fr;gap:8mm}.case-media img{max-height:80mm}.metric-band{margin:6mm 0}.case-details{gap:6mm}}
+</style></head><body id="page-top"><nav
+            class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top"
+            id="sideNav"><a class="navbar-brand js-scroll-trigger"
+                href="#page-top"><span class="d-block d-lg-none">김창은 프로젝트
+                    포트폴리오</span><span class="d-none d-lg-block"><img
+                        class="img-fluid rounded-circle mx-auto mb-2 profile-img"
+                        src="assets/img/profile.jpg"
+                        alt="김창은 프로필 사진" /></span></a><button
+                class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="탐색 메뉴 열기"><span
+                    class="navbar-toggler-icon"></span></button><div
+                class="collapse navbar-collapse" id="navbarResponsive"><ul
+                    class="navbar-nav"><li class="nav-item"><a
+                            class="nav-link js-scroll-trigger"
+                            href="#sto-evaluation"><span
+                                class="nav-year">2026</span><span
+                                class="nav-title">STO 기초자산 정성평가</span></a></li><li
+                        class="nav-item"><a class="nav-link js-scroll-trigger"
+                            href="#company-db"><span
+                                class="nav-year">2025</span><span
+                                class="nav-title">비상장기업 가치평가</span></a></li><li
+                        class="nav-item"><a class="nav-link js-scroll-trigger"
+                            href="#termsheet-extraction"><span
+                                class="nav-year">2025</span><span
+                                class="nav-title">투자설명서 파싱 자동화</span></a></li><li
+                        class="nav-item"><a class="nav-link js-scroll-trigger"
+                            href="#ai-wealth"><span
+                                class="nav-year">2023</span><span
+                                class="nav-title">AI Wealth</span></a></li><li
+                        class="nav-item"><a class="nav-link js-scroll-trigger"
+                            href="#insurance-risk"><span
+                                class="nav-year">2022</span><span
+                                class="nav-title">서울보증보험 경기반영 요율산정</span></a></li></ul></div></nav><main><section
+                class="overview" id="portfolio-overview"><div
+                    class="overview-inner"><div class="eyebrow">Project
+                        Portfolio</div><h1>프로젝트 포트폴리오<br /> 김창은</h1><p
+                        class="role-line"> AI & Quantitative Research ·
+                        Financial Engineering </p><div class="contact-line"><a
+                            href="mailto:changeun120@postech.ac.kr">changeun120@postech.ac.kr</a><a
+                            href="https://github.com/ChangeunKim">GitHub</a></div><div class="overview-index"><a
+                            href="#sto-evaluation"><small>2026</small><strong>STO
+                                기초자산 정성평가<br />AI Agent 기반 사회적 가치
+                                평가</strong></a><a
+                            href="#company-db"><small>2025</small><strong>비상장기업
+                                가치평가<br />Agentic AI 기반 평가 자동화</strong></a><a
+                            href="#termsheet-extraction"><small>2025</small><strong>투자설명서
+                                파싱 자동화<br />LLM/OCR 기반 발행정보 자동변환</strong></a><a
+                            href="#ai-wealth"><small>2023</small><strong>AI
+                                Wealth<br />지수예측 모델</strong></a><a
+                            href="#insurance-risk"><small>2022</small><strong>서울보증보험 경기반영 요율산정<br />기계학습 기반 보험사고 예측
+                                모델</strong></a></div></div></section><section
+                class="case-study" id="sto-evaluation"><div
+                    class="case-wrap"><div class="case-header"><div
+                            class="case-copy"><div class="case-kicker">2026 ·
+                                FnPricing · 2026.04-현재</div><div
+                                class="case-status">중간 PoC 완료 · 정형/비정형 데이터 자동 수집 파이프라인 구현</div>
+                                <h2>AI Agent 기반 STO 기초자산 사회적 가치평가</h2><p class="case-lead">정형·비정형 데이터를 Agent가
+                                유기적으로 수집하고, 근거 기반 정성평가 보고서로 전환하는 시스템입니다. 상업용 부동산과
+                                음악 저작권을 기초자산으로 하여 구현했습니다.</p><div
+                                class="tags"><span>Planner
+                                    Agent</span><span>ReAct
+                                    Supervisor</span><span>Tool
+                                    Calling</span><span>Alternative
+                                    Data</span></div></div><figure
+                            class="case-media"><img
+                                src="assets/img/portfolio/sto-evaluation-pipeline.png"
+                                alt="STO 기초자산 사회적 가치 평가 Agent 전체 파이프라인" /></figure></div><div
+                        class="metric-band"><div class="metric"><strong>6
+                                Skills · 21 Tools</strong><span>기초자산 정보 수집을 위한 정형·비정형
+                                원자료 불러오기 도구</span></div><div
+                            class="metric"><strong>사회적가치</strong><span>STO 사회적가치의 새로운 평가체계를 제안</span></div><div
+                            class="metric"><strong>2개 자산군</strong><span>수요가 높은 상업용 부동산과 음악 저작권 선적용</span></div></div><div
+                        class="case-evidence-grid"><figure><img
+                                src="assets/img/portfolio/sto-evaluation-tools.png"
+                                alt="STO 데이터 수집 Agent의 6개 Skill과 21개 Tool 지도" /><figcaption>Supervisor가
+                                목적에 맞는 Skill과 Tool을 필요에 따라 자동으로 선택해 평가 원자료를
+                                수집합니다.</figcaption></figure><figure><img
+                                src="assets/img/portfolio/sto-evaluation-planner.png"
+                                alt="플래너 에이전트가 평가 플랜을 설계하고 평가기가 항목별로 정성평가하는 구조" /><figcaption>플래너가
+                                평가 항목을 자율적으로 설계·검증하고, 평가기가 항목마다 근거 기반 정성평가를
+                                수행합니다.</figcaption></figure></div><div
+                        class="case-details"><div
+                            class="detail-block"><h3>문제</h3><p>STO 가치는 미래 현금흐름뿐 아니라
+                                대중 관심, 지역사회 관계, ESG와 브랜드 신뢰에도 영향을 받습니다. 비재무 데이터의
+                                비정형성을 고려해 자동화된 수집 파이프라인을 구축해야 했습니다.</p></div><div
+                            class="detail-block"><h3>핵심 접근</h3><p>Planner가 평가
+                                항목을 구성하고, 6개 Skill·21개 Tool이 원자료를 수집합니다. 순서효과를
+                                줄이기 위해 수집과 평가를 분리하고 원문을 보존한 뒤 세부평가를 병렬
+                                처리했습니다.</p></div><div class="detail-block"><h3>내
+                                역할</h3><p>사회적 가치 평가체계, Agent 아키텍처, Tool 인터페이스와
+                                보고서 생성 흐름을 설계했습니다. 동적 평가항목의 중복·근거 검증과 재처리 상한도
+                                코드로 통제했습니다.</p></div><div
+                            class="detail-block"><h3
+                                class="outcome">결과</h3><p>중간 PoC를 완료해, 플래너·평가기 구조로 상업용
+                                부동산 여러 건에 대해 근거 기반 사회적 가치 보고서를 자동 생성했습니다. 음악 저작권
+                                평가로 확장성을 확인했으며 Q&amp;A와 Human-in-the-loop를 고도화 중입니다.</p></div></div></div></section><section
+                class="case-study" id="company-db"><div class="case-wrap"><div
+                        class="case-header"><figure class="case-media"><img
+                                src="assets/img/portfolio/company-db-system.jpg"
+                                alt="상장사 DB 구축과 유사기업 선정 자동화 시스템 전체 구조" /></figure><div
+                            class="case-copy"><div class="case-kicker">2025 ·
+                                FnPricing · 2025.10-현재</div><div
+                                class="case-status">운영중 · 상장사 DB ETL과 유사기업 선정
+                                자동화</div><h2>Agentic AI 기반 비상장기업 유사기업 선정</h2><p
+                                class="case-lead">약 2,500개 상장사의 공시·재무·사업 데이터를
+                                정규화하고, 비상장기업의 비교기업 후보와 선정 근거를 자동 생성하는
+                                시스템입니다.</p><div class="tags"><span>Agentic
+                                    AI</span><span>Comparable
+                                    Companies</span><span>Hybrid
+                                    Retrieval</span><span>Financial Data
+                                    ETL</span></div></div></div><div
+                        class="metric-band"><div class="metric"><strong>1,325 →
+                                2,313</strong><span>DB 저장 기업 수, 커버리지 약 75%
+                                확대</span></div><div class="metric"><strong>384h
+                                → 42h</strong><span>DB 구축 소요시간 약 89%
+                                감소</span></div><div
+                            class="metric"><strong>1,920h →
+                                170h</strong><span>반복 평가 업무 약 92% 단축
+                                시나리오</span></div></div><div
+                        class="case-evidence-grid"><figure><img
+                                src="assets/img/portfolio/company-db-sources.jpg"
+                                alt="상장사 데이터베이스의 데이터 소스와 다섯 가지 유사성 데이터 구조" /><figcaption>DART·KRX·KSIC와
+                                사업보고서 XML을 다섯 가지 유사성 데이터로
+                                정규화했습니다.</figcaption></figure><figure><img
+                                src="assets/img/portfolio/company-db-results.jpg"
+                                alt="상장사 데이터베이스 자동 갱신의 커버리지와 시간 개선 결과" /><figcaption>DB
+                                커버리지를 확대하면서 구축 시간을 384시간에서 42시간으로
+                                줄였습니다.</figcaption></figure><figure><img
+                                src="assets/img/portfolio/company-selection-framework.jpg"
+                                alt="규칙과 LLM을 결합한 유사기업 선정 시스템 구조" /><figcaption>규칙
+                                기반 필터와 임베딩·LLM 평가를 결합한 5단계 선정
+                                구조입니다.</figcaption></figure><figure><img
+                                src="assets/img/portfolio/company-selection-ui.jpg"
+                                alt="유사기업 선정 결과와 평가 근거를 보여주는 사용자 화면" /><figcaption>후보기업,
+                                제품 구성, 뉴스와 선정 사유를 평가자가 다시 검토할 수
+                                있습니다.</figcaption></figure></div><div
+                        class="case-details"><div
+                            class="detail-block"><h3>문제</h3><p>상장사 DB 갱신과 유사기업
+                                선정이 수작업에 의존해 시간이 오래 걸리고, 평가자에 따라 후보와 근거가 달라지는
+                                문제가 있었습니다.</p></div><div
+                            class="detail-block"><h3>핵심 접근</h3><p>업종·재무·일반 조건은
+                                규칙으로 필터링하고, 사업·매출 구조는 벡터 임베딩과 LLM으로 비교했습니다. 후보
+                                생성과 설명 생성을 분리해 결과를 추적할 수 있게 했습니다.</p></div><div
+                            class="detail-block"><h3>내 역할</h3><p>상장사 DB ETL, 5개
+                                유사성 축, Agent workflow와 API·UI 연동을 구현했습니다.
+                                LangGraph·AutoGen, ChromaDB를
+                                사용했습니다.</p></div><div class="detail-block"><h3
+                                class="outcome">결과</h3><p>DB 커버리지와 구축 시간을 개선했고,
+                                기업 1개당 평균 5분 22초·약 0.14달러로 후보를 생성했습니다. 결과는 자동
+                                확정하지 않고 평가자가 선정 사유를 검토하도록
+                                설계했습니다.</p></div></div></div></section><section
+                class="case-study" id="termsheet-extraction"><div
+                    class="case-wrap"><div class="case-header"><div
+                            class="case-copy"><div class="case-kicker">2025 ·
+                                FnPricing · 2025.05-2025.08</div><div
+                                class="case-status">PoC 완료 · 상품별 필드 단위 정확도
+                                검증</div><h2>LLM/OCR 기반 투자설명서 발행정보 자동화</h2><p
+                                class="case-lead">서로 다른 형식의 투자설명서를 읽어 발행정보를
+                                추출하고, 평가 시스템이 사용할 수 있는 JSON으로 변환하는 Document AI
+                                파이프라인입니다.</p><div class="tags"><span>Document
+                                    AI</span><span>OCR</span><span>Prompt
+                                    Engineering</span><span>JSON
+                                    Schema</span></div></div><figure
+                            class="case-media"><img
+                                src="assets/img/portfolio/termsheet-demo-ui.png"
+                                alt="투자설명서 원문을 JSON으로 자동 변환하는 웹 PoC 화면" /></figure></div><div
+                        class="metric-band"><div class="metric"><strong>30분~1시간 →
+                                2분</strong><span>문서 1건 처리시간</span></div><div
+                            class="metric"><strong>95%+</strong><span>전체 평균 추출
+                                정확도</span></div><div
+                            class="metric"><strong>11,270
+                                fields</strong><span>4개 상품군 검증
+                                항목</span></div></div><div
+                        class="case-evidence-grid"><figure><img
+                                src="assets/img/portfolio/termsheet-cot-prompt-example.jpg"
+                                alt="OCR 오류를 보정해 가산금리 JSON 값을 산출하는 Chain-of-Thought 프롬프트 예시" /><figcaption>OCR이
+                                % 기호를 96으로 오인한 문장을 단계적으로 해석해 가산금리 1.44%를 JSON 값
+                                0.0144로
+                                변환했습니다.</figcaption></figure><figure><img
+                                src="assets/img/portfolio/termsheet-validation.jpg"
+                                alt="채권선도 FRN IRS CRS 상품별 투자설명서 발행정보 추출 정확도" /><figcaption>632개
+                                문서의 11,270개 필드를 상품별로 평가해 오류가 집중되는 구간을
+                                개선했습니다.</figcaption></figure></div><div
+                        class="case-details"><div
+                            class="detail-block"><h3>문제</h3><p>PDF·DOCX·스캔 이미지가
+                                혼재하고 상품마다 문서 양식과 추출 필드가 달라, 규칙 기반 파서만으로는 수기 입력을
+                                대체하기 어려웠습니다.</p></div><div
+                            class="detail-block"><h3>핵심 접근</h3><p>OCR과 표 파싱 후
+                                LLM이 상품별 스키마에 맞춰 정보를 추출하도록 했습니다.
+                                Role·Few-shot·Chain-of-Thought 프롬프트를 오류 필드 중심으로 적용하고 원문 대조
+                                검증을 붙였습니다.</p></div><div
+                            class="detail-block"><h3>내 역할</h3><p>문서 파싱부터 프롬프트,
+                                JSON Schema, 후처리·검증 로직과 PoC UI까지 전 과정을 설계하고
+                                구현했습니다. 특히 OCR 오인식 문제 해결을 위한 프롬프팅 기반 후처리 설계에 집중했습니다. </p></div><div class="detail-block"><h3
+                                class="outcome">결과</h3><p>추출 회당 약 0.1달러 비용으로 처리시간을 15배 이상 단축했습니다.
+                                채권선도 98.9%, FRN 97.8%, IRS 95.4%, CRS 97.0%의
+                                최종 정확도를 확보하고 평가엔진 연동 구조를
+                                구축했습니다. </p></div></div></div></section><section
+                class="case-study" id="ai-wealth"><div class="case-wrap"><div
+                        class="case-header"><div class="case-copy"><div
+                                class="case-kicker">2023 · 하나은행 ·
+                                2023.07-2024.04</div><div class="case-status">금융
+                                AI 연구용역 · 글로벌 지수 예측 데이터·모형 개발</div><h2>AI Wealth
+                                글로벌 지수 예측 모델</h2><p class="case-lead">미국
+                                주식·채권시장에서 검증된 선행연구의 변수 체계와 예측 방법론을 글로벌 시장으로
+                                확장하고, MSCI 주가, 원자재, 채권 지수 등의 예측을 위한 국가별 거시경제 데이터셋을
+                                구축했습니다.</p><div class="tags"><span>Macroeconomic
+                                    Data</span><span>MSCI
+                                    Index</span><span>Conditional
+                                    Autoencoder</span><span>GAN-SDF</span></div></div><figure
+                            class="case-media brand-media"><img
+                                src="assets/img/portfolio/hana-bank-logo.png"
+                                alt="하나은행 CI" /></figure></div><div
+                        class="metric-band"><div class="metric"><strong>39개국 ·
+                                43종</strong><span>국가별 거시경제지표 약
+                                1,600개</span></div><div
+                            class="metric"><strong>2,900
+                                variables</strong><span>거시지표와 파생변수
+                                통합</span></div><div class="metric"><strong>4
+                                model
+                                families</strong><span>RF·LightGBM·CAE·GAN-SDF</span></div></div><div
+                        class="case-evidence-grid"><figure><img
+                                src="assets/img/portfolio/ai-wealth-research-plan.jpg"
+                                alt="글로벌 지수 예측 대상과 트리 딥러닝 기반 예측 모형 연구계획" /><figcaption>미국
+                                시장 선행연구의 트리·멀티팩터 모형을 11개 글로벌 주식·채권·원자재·부동산 지수에
+                                적용했습니다.</figcaption></figure><figure><img
+                                src="assets/img/portfolio/ai-wealth-macro-dataset.jpg"
+                                alt="MSCI World와 MSCI EM 구성국 및 국가별 거시경제 데이터셋 설계" /><figcaption>MSCI
+                                구성국을 기준으로 39개국 데이터를 정렬하고, 거시지표와 시장 파생변수 총
+                                2,900개를 구축했습니다.</figcaption></figure></div><div
+                        class="case-details"><div
+                            class="detail-block"><h3>문제</h3><p>미국 시장에서 검증된 예측
+                                변수와 모형을 글로벌 지수에 적용하려면 국가 구성, 공표 시차, 빈도와 결측 구간이
+                                서로 다른 거시데이터를 동일한 기준으로 정렬해야 했습니다.</p></div><div
+                            class="detail-block"><h3>핵심 접근</h3><p>Gu et al.
+                                (2020)의 미국 주식 예측과 Bianchi et al. (2021)의 미국 채권
+                                예측에서 검증된 거시·시장 변수 체계를 출발점으로 MSCI World·EM 구성국
+                                데이터를 수집했습니다. 시차·정상성·월별 변환을 자동화하고 시장 특성 파생변수를
+                                결합했습니다.</p></div><div class="detail-block"><h3>내
+                                역할</h3><p>예측 지수별 국가 선정, 39개국 거시지표 코드 매핑과 전처리
+                                파이프라인을 구축했습니다. Random Forest·LightGBM과
+                                Conditional Autoencoder·GAN-SDF의 학습·검증에도
+                                참여했습니다.</p></div><div class="detail-block"><h3
+                                class="outcome">결과</h3><p>국가별 거시지표 약 1,600개와
+                                파생변수 약 1,300개를 결합한 2,900개 입력변수 데이터셋을 완성했습니다.
+                                지수별로 트리 모형과 딥러닝 멀티팩터 모형을 비교할 수 있는 연구 기반을
+                                마련했습니다.</p></div></div></div></section><section
+                class="case-study" id="insurance-risk"><div
+                    class="case-wrap"><div class="case-header"><figure
+                            class="case-media"><img
+                                src="assets/img/portfolio/sgi-logo.webp"
+                                alt="SGI서울보증 CI" /></figure><div
+                            class="case-copy"><div class="case-kicker">2022 ·
+                                서울보증보험 · 2022.09-2022.12</div><div
+                                class="case-status">연구용역 · 노이즈 타깃 전처리와 사고위험
+                                예측</div><h2>기계학습 기반 보증보험 사고예측 및 요율모형</h2><p
+                                class="case-lead">변동성이 큰 보험사고 시계열에서 추세 신호를 분리해
+                                학습 타깃을 구성하고, 상품별 청구 위험의 상승을 1·6개월 선행 예측한
+                                프로젝트입니다.</p><div class="tags"><span>L1 Trend
+                                    Filtering</span><span>Time
+                                    Series</span><span>XGBoost</span><span>CNN</span></div></div></div><div
+                        class="metric-band"><div class="metric"><strong>12개
+                                상품군</strong><span>상품별 사고 패턴 학습</span></div><div
+                            class="metric"><strong>1개월 /
+                                6개월</strong><span>청구건수·빈도 방향 예측</span></div><div
+                            class="metric"><strong>3개 모델</strong><span>Logistic
+                                Regression·XGBoost·CNN</span></div></div><div
+                        class="case-evidence-grid"><figure><img
+                                src="assets/img/portfolio/insurance-l1-filtering.jpg"
+                                alt="노이즈가 큰 보험 청구 시계열에 L1 trend filtering을 적용한 결과" /><figcaption>L1
+                                trend filtering으로 단기 변동을 완화하면서 사고율의 구조적 추세를
+                                보존했습니다.</figcaption></figure><figure><img
+                                src="assets/img/portfolio/insurance-results.jpg"
+                                alt="보증보험 청구건수 증감의 실제값과 classification 예측 결과" /><figcaption>실제
+                                증감 방향, 예측확률과 최종 분류값을 시간축에서 함께
+                                검증했습니다.</figcaption></figure></div><div
+                        class="case-details"><div
+                            class="detail-block"><h3>문제</h3><p>보증보험은 경기변동에 민감하지만, 요율
+                                조정은 과거 경험통계에 의존해 현행 경기상황을 반영하지 못하고 경기에 후행했습니다.
+                                경기를 요율에 반영하는 방법은 언더라이터 개인의 판단에 맡겨져 있었습니다.</p></div><div class="detail-block"><h3>핵심
+                                접근</h3><p>경기선행·동행지표를 설명변수로, 사고율의 대리변수인 청구건수·청구빈도의
+                                증감을 미리 예측하는 구조로 설계했습니다. L1 trend filtering으로 구조적 추세는
+                                유지하며 노이즈를 완화하고, 정상성 변환과 시차변수를 적용해 1·6개월 분류 타깃을
+                                구성했습니다.</p></div><div class="detail-block"><h3>내
+                                역할</h3><p>타깃 시계열 진단과 L1 filtering 기반 전처리, 상품별 학습
+                                데이터 구성, 세 모델의 하이퍼파라미터 탐색과 시간순 성능 검증을
+                                구현했습니다.</p></div><div class="detail-block"><h3
+                                class="outcome">결과</h3><p>12개 상품군과 두 예측기간에 대해
+                                Accuracy·F1·Precision·Recall을 비교했습니다. 일부 상품·기간에서
+                                F1과 정확도 0.7 이상을 확인해, 경기 후행이 아닌 선제적 요율 조정의 근거로
+                                인수 기준과 요율 검토에 연결하는 활용안을
+                                제안했습니다.</p></div></div></div></section></main><script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script><script
+            src="js/scripts.js"></script></body></html>

@@ -1,0 +1,12 @@
+# Local source/reference materials
+reference/
+vendor/
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+*.tmp
+
+# Local archives
+*.zip
+.cv-restore/
